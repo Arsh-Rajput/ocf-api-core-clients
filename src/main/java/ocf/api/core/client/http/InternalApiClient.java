@@ -3,9 +3,13 @@ package ocf.api.core.client.http;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
+@Primary
+@Scope("prototype")
 public class InternalApiClient {
 
 	@Autowired
